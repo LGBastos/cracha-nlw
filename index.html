@@ -19,49 +19,52 @@
   </head>
   <body>
     <main>
-      <div class="container">
-        <div class="avatar">
-          <span>
+      <div id="background">
+        <div class="container">
+          <div class="avatar">
+            <span>
+              <img
+                src="images/selo_build_branco_rocketseat.svg"
+                alt="Selo Rocketseat"
+              />
+            </span>
             <img
-              src="images/selo_build_branco_rocketseat.svg"
-              alt="Selo Rocketseat"
+              src="https://lorempixel.com/185/185/people/"
+              alt="Foto pessoal"
+              id="userAvatar"
             />
-          </span>
-          <img
-            src="https://lorempixel.com/185/185/people/"
-            alt="Foto pessoal"
-            id="userAvatar"
-          />
+          </div>
+          <h1 id="userName"></h1>
+          <a id="github" href="" target="_blank"
+            ><img src="images/github.svg" alt="ícone github" />
+            <span>login do GitHub</span></a
+          >
+          <p id="userBio">Bio do GitHub</p>
+  
+          <ul id="socialLinks">
+            <li id="youtube">
+              <a href="" target="_blank">
+                <img src="images/youtube.svg" alt="ícone youtube" />
+              </a>
+            </li>
+            <li id="instagram">
+              <a href="" target="_blank">
+                <img src="images/instagran.svg" alt="ícone instagram" />
+              </a>
+            </li>
+            <li id="facebook">
+              <a href="" target="_blank">
+                <img src="images/facebook.svg" alt="ícone facebook" />
+              </a>
+            </li>
+            <li id="twitter">
+              <a href="" target="_blank">
+                <img src="images/twitter.svg" alt="ícone twitter" />
+              </a>
+            </li>
+          </ul>
         </div>
-        <h1 id="userName"></h1>
-        <a id="github" href="" target="_blank"
-          ><img src="images/github.svg" alt="ícone github" />
-          <span>login do GitHub</span></a
-        >
-        <p id="userBio">Bio do GitHub</p>
 
-        <ul id="socialLinks">
-          <li id="youtube">
-            <a href="" target="_blank">
-              <img src="images/youtube.svg" alt="ícone youtube" />
-            </a>
-          </li>
-          <li id="instagram">
-            <a href="" target="_blank">
-              <img src="images/instagran.svg" alt="ícone instagram" />
-            </a>
-          </li>
-          <li id="facebook">
-            <a href="" target="_blank">
-              <img src="images/facebook.svg" alt="ícone facebook" />
-            </a>
-          </li>
-          <li id="twitter">
-            <a href="" target="_blank">
-              <img src="images/twitter.svg" alt="ícone twitter" />
-            </a>
-          </li>
-        </ul>
       </div>
     </main>
     <!-- colocado em baixo e não no head pois precisa que a pagina seja carregada para ter acesso à elementos do DOM -->

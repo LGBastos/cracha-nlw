@@ -1,11 +1,10 @@
-*{
+* {
   margin: 0;
 }
-html, body {
+html,
+body {
   --black: hsl(240, 6%, 13%);
-  --grey:hsl(240, 9%, 89%);
- 
-
+  --grey: hsl(240, 9%, 89%);
 
   height: 100%;
   font-family: roboto, sans-serif;
@@ -14,39 +13,28 @@ html, body {
 body {
   display: grid;
   place-items: center;
-  
 }
-
-main{
-  background: url(images/background.svg) no-repeat center/cover;
-  width: 100vw;
-  min-height: 812px;
-  height: 100vh;
-  
-}
-
-.container{
+.container {
   max-width: 250px;
   margin: 0 auto;
   text-align: center;
 
   color: var(--grey);
-
 }
 
-.avatar{
+.avatar {
   width: 10rem;
   margin: 11.5rem auto 0;
 
   position: relative;
 }
-.avatar span{
+.avatar span {
   position: absolute;
   top: -15px;
 
   z-index: 1;
 }
-.avatar > img{
+.avatar > img {
   width: 10rem;
   height: 11.5rem;
 
@@ -54,11 +42,11 @@ main{
 
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
-h1{
+h1 {
   font-size: 1.5rem;
   margin-top: 1.5rem;
 }
-a{
+a {
   color: var(--grey);
   text-decoration: none;
 
@@ -70,16 +58,11 @@ a{
   justify-content: center;
   align-items: center;
 }
-a p{
+a p {
   margin: 0;
 }
-p{
-  margin-top: 2rem;
-}
 
-ul{
-  margin-top: 4rem;
-
+ul {
   list-style: none;
   padding: 0;
 
@@ -87,5 +70,57 @@ ul{
   gap: 0.5rem;
 
   justify-content: center;
+}
 
+@media (max-width: 960px) {
+  main {
+    background: url(images/background.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+  }
+  h1 {
+    margin-top: 1.5rem;
+  }
+  p {
+    margin-top: 2rem;
+  }
+  ul {
+    margin-top: 4rem;
+  }
+}
+@media (min-width: 960px) {
+  body {
+    background: #09090a;
+  }
+  main {
+    background: url(images/background-degrade.svg) no-repeat center/cover;
+    width: 100vw;
+    height: 100vh;
+  }
+  main #background {
+    background: url(images/Desktop_cracha_background.svg) no-repeat center/cover;
+    height: 680px;
+    width: 358px;
+    position: absolute;
+    left:50vw;
+    margin-left: -179px;
+  }
+  .container {
+    max-height: 470px;
+    position: relative;
+    top: -1.48rem;
+    
+  }
+
+  h1 {
+    margin-top: 0.75rem;
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+  ul {
+    margin-top: 1rem;
+  }
 }
