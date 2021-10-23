@@ -26,7 +26,7 @@ main{
 }
 
 .container{
-  max-width: 250px;
+  max-width: 15.625rem;
   margin: 0 auto;
   text-align: center;
 
@@ -42,7 +42,7 @@ main{
 }
 .avatar span{
   position: absolute;
-  top: -15px;
+  top: -0.99rem;
 
   z-index: 1;
 }
